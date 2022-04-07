@@ -1,0 +1,165 @@
+@charset "UTF-8";
+
+/*   DOCUMENTAÇÃO
+
+*** FONTES
+*** ROOT = [VARIÁVEIS]
+*** BODY
+*** HEADER
+*** LOGO
+*** MAIN
+*** MEDIA QUERIES
+
+*/
+
+/*   FONTES   */
+@font-face {
+	font-family: RopaSans;
+	src: url(../fonts/RopaSans/RopaSans-Regular.ttf);
+}
+@font-face {
+    font-family: Lato;
+    src: url(../fonts/Lato/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Rambla;
+    src: url(../fonts/Rambla/Rambla-Regular.ttf);
+}
+
+/*   ROOT   */
+:root {
+    width: 100%;
+    font-family: Lato;
+    font-size: 15px;
+    
+    /*   VARIÁVEIS   */
+    --cor-primaria: #63357d;
+}
+
+/*   BODY   */
+body {
+    width: 100%;
+}
+
+.tamanhoMaximo {
+    margin: 0 auto;
+    max-width: 66.6666666rem;/*1000px*/
+}
+
+/*   HEADER   */
+header {
+    font-family: Rambla;
+    height: 7rem;
+    background-color: var(--cor-primaria);
+}
+header .tamanhoMaximo, header .tamanhoMaximo nav {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: .5rem;
+}
+header nav p a {
+    margin: .5rem;
+    padding: .5rem;
+    font-weight: bold;
+    color: white;
+}
+header nav p:hover {
+    border-bottom: 0.1333333333333333rem solid #39A0ED;/*2px*/
+}
+
+/*   LOGO   */
+.tamanhoMaximo figure a img {
+    width: 10rem;
+    margin-top: .5rem;
+}
+.tamanhoMaximo figure figcaption {
+    display: none;
+}
+
+/*   MAIN   */
+main {
+    padding-top: 3.3333333rem;/*20px*/
+    text-align: justify;
+    background-color: #e8dcec;
+}
+main .tamanhoMaximo {
+    padding: 3rem;
+}
+main .tamanhoMaximo h2 {
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding-bottom: 3rem;
+}
+main .tamanhoMaximo p {
+    line-height: 20px;
+    word-spacing: 4px;
+    padding-bottom: 4rem;
+}
+
+/*   FOOTER   */
+footer {
+    font-family: Rambla;
+    height: 16rem;
+    background-color: var(--cor-primaria);
+    color: white;
+}
+footer .tamanhoMaximo .conteudoRodape {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-bottom: 2px solid white;
+    margin-bottom: 20px;
+}
+footer .tamanhoMaximo .conteudoRodape .contatos, .realizacao, .apoio {
+    margin-top: 40px;
+}
+footer .tamanhoMaximo .conteudoRodape .contatos h3, .realizacao h3, .apoio h3 {
+    font-size: 17px;
+    color: #bab3bb;
+    margin-bottom: 13px;
+}
+footer .tamanhoMaximo .conteudoRodape .contatos nav p {
+    margin: 10px 0;
+}
+footer .tamanhoMaximo .conteudoRodape .contatos nav p a {
+    color: white;
+}
+footer .tamanhoMaximo .conteudoRodape .realizacao img, .apoio img {
+    height: 65px;
+    margin: 0 5px;
+}
+footer .tamanhoMaximo .direitosELicenca {
+    padding-top: 15px;
+    text-align: center;
+}
+footer .tamanhoMaximo .direitosELicenca p:first-child {
+    color: #bab3bb;
+    margin-bottom: 4px;
+}
+
+/*   MEDIA QUERIES   */
+@media (max-width: 1020px) {
+    footer .tamanhoMaximo .conteudoRodape {
+        margin: 0 20px;
+    }
+}
+
+@media (max-width: 800px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    :root {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 400px) {
+    :root {
+        font-size: 8px;
+    }
+}

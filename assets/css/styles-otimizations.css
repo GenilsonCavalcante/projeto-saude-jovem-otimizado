@@ -1,0 +1,378 @@
+@charset "UTF-8";
+
+/*  DOCUMENTAÇÃO
+
+*** FONTES
+*** ROOT = [VARIÁVEIS]
+*** BODY
+*** ESTILIZAÇÕES GERAIS
+*** HEADER
+*** LOGO
+*** MAIN
+*** MAIN - INDEX.PHP
+*** MAIN - ASSISTENTE-VIRTUAL.PHP = [CAIXA DE TEXTO DINÂMICA]
+*** MAIN - DOWNLOAD.PHP
+*** MAIN - EQUIPE.PHP
+*** MAIN - PUBLICACOES.PHP
+*** FOOTER
+*** MEDIA QUERIES
+*/
+
+
+/*   FONTES   */
+@font-face {
+   font-family: RopaSans;
+   src: url(../fonts/RopaSans/RopaSans-Regular.ttf);
+}
+@font-face {
+   font-family: Lato;
+   src: url(../fonts/Lato/OpenSans-Regular.ttf);
+}
+@font-face {
+   font-family: Rambla;
+   src: url(../fonts/Rambla/Rambla-Regular.ttf);
+}
+
+
+/*   ROOT   */
+:root {
+   width: 100%;
+   font-family: Lato;
+   font-size: 15px;
+
+   /*   VARIÁVEIS   */
+   --cor-primaria: #63357d;
+}
+
+
+/*   BODY   */
+body {
+   width: 100%;
+}
+
+
+/* ESTILIZAÇÕES GERAIS */
+.header__largura-maxima,
+.main__largura-maxima,
+.footer__largura-maxima {
+   margin: 0 auto;
+   max-width: 66.6666666rem; /*1000px*/
+}
+
+
+/* HEADER */
+.header {
+   font-family: Rambla;
+   height: 7rem;
+   background-color: var(--cor-primaria);
+}
+
+.header__largura-maxima,
+.header__navegacao ul {
+   display: flex;
+   text-align: center;
+   align-items: center;
+   justify-content: space-between;
+   padding: 0.5rem;
+}
+
+.header__navegacao-link {
+   margin: 0.7rem;
+   padding: 0.1rem;
+   font-weight: bold;
+   color: white;
+}
+.header__navegacao-link:hover {
+   border-bottom: 0.1333333333333333rem solid #39a0ed; /*2px*/
+}
+
+
+/* LOGO */
+.header__logo {
+   width: 10rem;
+   margin-top: 0.5rem;
+}
+.header__figcaption {
+   display: none;
+}
+
+
+/* MAIN */
+.main {
+   padding-top: 3.3333333rem; /*20px*/
+   text-align: justify;
+   background-color: #e8dcec;
+}
+
+.main__largura-maxima {
+   padding: 3rem;
+}
+
+.main__titulo {
+   font-weight: bold;
+   font-size: 1.5rem;
+   padding-bottom: 3rem;
+}
+
+.main__paragraph {
+   line-height: 1.3333333rem;
+   word-spacing: .26666666rem;
+   margin-bottom: 0.6rem;
+}
+
+.main__paragraph--margin-bottom {
+   margin-bottom: 4rem;
+}
+.main__paragraph--margin-top {
+   margin-top: 3rem;
+}
+
+
+/* MAIN - INDEX.PHP */
+.main__div-titulo-index {
+   margin: 0 auto;
+   width: 40rem;
+}
+
+.main__titulo-index {
+   font-size: 1.533333rem;
+   margin-bottom: 5.33333rem;
+   font-weight: bold;
+   text-align: center;
+}
+
+.main__infografo-index {
+   width: 60%;
+   margin: 0 20%;
+}
+
+
+/* MAIN - ASSISTENTE-VIRTUAL.PHP */
+.main__personas {
+   margin: 3rem auto 0;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   width: 100%;
+   max-width: 53.333333rem;
+}
+
+.main__personas-link {
+   margin: 0 .3333333rem;
+   text-align: center;
+}
+
+.main__personas-img {
+   width: 10rem;  
+}
+
+.main__personas-p {
+   color: black;
+   font-weight: bold;
+   margin: .66666666rem;
+}
+
+/* CAIXA DE TEXTO DINÂMICA */
+.main__caixa-dialogo {
+   position: relative;
+   display: inline-block; 
+}
+
+.main__caixa-dialogo-texto {
+   visibility: hidden;
+   width: 8rem;
+   background-color: white;
+   color: black;
+   text-align: center;
+   padding: .3333333rem 0;
+   position: absolute;
+   z-index: 1;
+}
+
+.main__caixa-dialogo:hover .main__caixa-dialogo-texto {
+   visibility: visible;
+}
+
+
+/* MAIN - DOWNLOAD.PHP */
+.main__fazer-download {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   margin: 2rem auto;
+}
+
+.main__fazer-download-img {
+   height: 6.666666rem;
+   margin-bottom: 1rem;
+}
+
+.main__lojas-virtuais {
+   margin-top: .8rem;
+}
+
+.main__lojas-virtuais-img {
+   height: 3rem;
+}
+
+
+/* MAIN - EQUIPE.PHP */
+.main__imagens-equipe {
+   width: 100%;
+   max-width: 56.6666666rem;
+   margin: 0 auto;
+}
+
+.main__imagens-equipe-h3 {
+   font-weight: bold;
+   margin-top: 2.666666rem;
+   margin-bottom: .6666666rem;
+}
+
+.main__coluna-imagem {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.main__imagem-margin {
+   margin-right: 2rem;
+}
+
+.main__imagem-individual {
+   margin-bottom: 2rem;
+}
+
+.main__imagem-individual p {
+   margin-bottom: .66666666rem;
+}
+
+.main__imagem-individual a img {
+   width: 6.66666666rem;
+   margin: .66666666rem;
+   border-radius: 50%;
+}
+
+
+/* MAIN - PUBLICACOES.PHP */
+.main__publicacao-h3 {
+   font-weight: bold;
+   margin-bottom: 1rem;
+}
+
+.main__publicacao-button {
+   cursor: pointer;
+   margin-top: .666666666rem;
+   background-color: white;
+   padding: .3333333rem;
+   border: .133333333rem solid #63357d;
+   border-radius: .2666666666rem;
+}
+.main__publicacao-button:hover {
+   background-color: rgb(209, 209, 209);
+}
+.main__publicacao-button:active {
+   color: white;
+   background-color: #563e64;
+}
+
+.main__publicacoes {
+   margin-bottom: 3.33333333rem;
+}
+
+.main__publicacoes p {
+   margin: 0;
+   padding: 0;
+}
+
+
+/* FOOTER */
+.footer {
+   font-family: Rambla;
+   height: 16rem;
+   background-color: var(--cor-primaria);
+   color: white;
+}
+
+.footer__informacoes {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   border-bottom: .13333333rem solid white;
+   margin-bottom: 1.3333333rem;
+   padding-bottom: 1rem;
+}
+
+.footer__contatos,
+.footer__realizacao,
+.footer__apoio {
+   margin-top: 1.6666666rem;
+}
+
+.footer__h3 {
+   font-size: 1.133333333rem;
+   color: #bab3bb;
+   margin-bottom: .866666666rem;
+}
+
+.footer__item {
+   margin: .6666666666rem 0;
+}
+
+.footer__link {
+   color: white;
+}
+
+.footer__img {
+   height: 4.3333333333rem;
+   margin: 0 .3333333333rem;
+}
+
+.footer__direitos-licencas {
+   padding-top: 1rem;
+   text-align: center;
+}
+
+.footer__direitos-licencas:first-child {
+   color: #bab3bb;
+   margin-bottom: .266666666rem;
+}
+
+
+/* MEDIA QUERIES */
+@media (max-width: 1020px) {
+   /* FOOTER */
+   .footer__informacoes {
+      margin: 0 1.33333333rem;
+   }
+}
+
+@media (max-width: 870px) {
+   /* FOOTER */
+   .footer {
+      height: 23rem;
+   }
+}
+
+@media (max-width: 800px) {
+   :root {
+      font-size: 12px;
+   }
+}
+
+@media (max-width: 600px) {
+   :root {
+      font-size: 10px;
+   }
+
+   .main__titulo-index {
+      font-size: 1.2rem;
+   }
+}
+
+@media (max-width: 400px) {
+   :root {
+      font-size: 8px;
+   }
+}
