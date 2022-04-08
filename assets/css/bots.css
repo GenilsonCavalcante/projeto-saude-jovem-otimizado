@@ -1,17 +1,23 @@
-main .tamanhoMaximo .imagemPersona img {
-    width: 200px;
+.main__imagem-persona {
+    max-width: 200px;
 }
 
-main .tamanhoMaximo .chat {
-    width: 400px;
-    background-color: rgb(204, 204, 204);
-    margin: 0 auto;
+.main__campo-chatbot {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.main__chat {
+    display: flex;
+    max-width: 400px;
+    margin: 0 auto 2rem;
     padding: 5px;
-    text-align: center;
     border-radius: 5px;
+    background-color: rgb(204, 204, 204);
     border: 1.8px solid #b22dff;
 }
-main .tamanhoMaximo .chat #inputText {
+
+.main__textarea {
     resize: none;
     outline: none;
     border: none;
@@ -20,14 +26,42 @@ main .tamanhoMaximo .chat #inputText {
     width: 370px;
     background-color:rgb(204, 204, 204);
 }
-main .tamanhoMaximo .chat a img {
+
+.main__label-img {
     height: 30px;
+    width: 30px;
+    display: inline-block;
     margin-left: 90%;
 }
 
-/* div.caixaDeDialogo {
+.main__img-enviar-msg {
+    width: 100%;
+}
+
+.main__input-submit {
+    display: none;
+}
+
+/* .main__caixa-dialogo {
     background-color: #E0E2DB;
     width: 200px;
     height: 200px;
     overflow: auto;
 } */
+
+@media (max-width: 1000px) {
+    .main__imagem-persona {
+        max-width: 150px;
+    }
+}
+
+@media (max-width: 700px) {
+    .main__imagem-persona {
+        max-width: 100px;
+    }
+
+    .main__campo-chatbot {
+        flex-direction: column;
+        align-items: center;
+    }
+}

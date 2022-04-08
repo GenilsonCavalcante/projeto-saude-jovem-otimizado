@@ -1,15 +1,17 @@
 <?php
-include_once("../templates/header.php");
+include_once("assets/templates/header.php");
 ?>
 
 <main>
   <div class="tamanhoMaximo">
     <div class="campoAssistenteVirtual">
       <div class="imagemPersona">
-        <img src="../img/personas/maria-larg-300.png" alt="Imagem da Maria" />
+        <img src="../img/personas/gabriel-larg-300.png" alt="Imagem do Gabriel" />
       </div>
 
-      <div class="caixaDeDialogo"></div>
+      <!-- <div class="caixaDeDialogo">
+    
+                </div> -->
     </div>
 
     <div class="chat">
@@ -30,5 +32,5 @@ include_once("../templates/header.php");
 </main>
 <script src="../js/inputTextBot.js"></script>
 <?php
-include_once("../templates/footer.php");
+include_once("assets/templates/footer.php");
 ?>

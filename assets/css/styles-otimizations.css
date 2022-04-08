@@ -262,6 +262,7 @@ body {
 }
 
 .main__publicacao-button {
+   font-size: .9rem;
    cursor: pointer;
    margin-top: .666666666rem;
    background-color: white;

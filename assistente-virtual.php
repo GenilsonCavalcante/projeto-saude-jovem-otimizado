@@ -41,7 +41,7 @@ include_once("assets/templates/header.php");
       <p class="main__paragraph main__paragraph--margin-top">Escolha um personagem para tirar as suas dúvidas:</p>
 
       <div class="main__personas">
-         <a class="main__personas-link" href="<?php echo $BASE_URL; ?>/assets/html/ana.html">
+         <a class="main__personas-link" href="<?php echo $BASE_URL; ?>/ana.php">
             <div>
                <div class="main__caixa-dialogo">
                   <img class="main__personas-img" src="<?php echo $BASE_URL; ?>/assets/img/personas/ana-larg-300.png" alt="Imagem do bot Ana" />
@@ -50,7 +50,7 @@ include_once("assets/templates/header.php");
             </div>
             <p class="main__personas-p">Ana</p>
          </a>
-         <a class="main__personas-link" href="<?php echo $BASE_URL; ?>/assets/html/gabriel.html">
+         <a class="main__personas-link" href="<?php echo $BASE_URL; ?>/assets/html/gabriel.php">
             <div>
                <div class="main__caixa-dialogo">
                   <img class="main__personas-img" src="<?php echo $BASE_URL; ?>/assets/img/personas/gabriel-larg-300.png" alt="Imagem do bot Gabriel" />
@@ -59,7 +59,7 @@ include_once("assets/templates/header.php");
             </div>
             <p class="main__personas-p">Gabriel</p>
          </a>
-         <a class="main__personas-link" href="<?php echo $BASE_URL; ?>/assets/html/joao.html">
+         <a class="main__personas-link" href="<?php echo $BASE_URL; ?>/assets/html/joao.php">
             <div>
                <div class="main__caixa-dialogo">
                   <img class="main__personas-img" src="<?php echo $BASE_URL; ?>/assets/img/personas/joao-larg-300.png" alt="Imagem do bot João" />
@@ -68,7 +68,7 @@ include_once("assets/templates/header.php");
             </div>
             <p class="main__personas-p">João</p>
          </a>
-         <a class="main__personas-link" href="<?php echo $BASE_URL; ?>/assets/html/lucas.html">
+         <a class="main__personas-link" href="<?php echo $BASE_URL; ?>/assets/html/lucas.php">
             <div>
                <div class="main__caixa-dialogo">
                   <img class="main__personas-img" src="<?php echo $BASE_URL; ?>/assets/img/personas/lucas-larg-300.png" alt="Imagem do bot Lucas" />
@@ -77,7 +77,7 @@ include_once("assets/templates/header.php");
             </div>
             <p class="main__personas-p">Lucas</p>
          </a>
-         <a class="main__personas-link" href="<?php echo $BASE_URL; ?>/assets/html/maria.html">
+         <a class="main__personas-link" href="<?php echo $BASE_URL; ?>/assets/html/maria.php">
             <div>
                <div class="main__caixa-dialogo">
                   <img class="main__personas-img" src="<?php echo $BASE_URL; ?>/assets/img/personas/maria-larg-300.png" alt="Imagem do bot Maria" />

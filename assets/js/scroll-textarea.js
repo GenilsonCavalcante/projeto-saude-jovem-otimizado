@@ -8,11 +8,3 @@ function OnInput() {
   this.style.height = "auto";
   this.style.height = (this.scrollHeight) + "px";
 }
-
-//Ativação do Chat
-const ativarChat = document.getElementsByClassName("chat")[0];
-const campoTexto = document.getElementById("inputText");
-
-ativarChat.addEventListener("click", function() {
-  campoTexto.focus();
-});

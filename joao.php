@@ -1,5 +1,5 @@
 <?php
-include_once("../templates/header.php");
+include_once("assets/templates/header.php");
 ?>
 
 <main>
@@ -30,5 +30,5 @@ include_once("../templates/header.php");
 </main>
 <script src="../js/inputTextBot.js"></script>
 <?php
-include_once("../templates/footer.php");
+include_once("assets/templates/footer.php");
 ?>

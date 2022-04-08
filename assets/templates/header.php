@@ -1,5 +1,5 @@
 <?php
-require_once("url.php");
+require_once("./url.php");
 ?>
 
 <!DOCTYPE html>
